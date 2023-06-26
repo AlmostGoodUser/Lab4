@@ -37,6 +37,30 @@ then
 		i=$(($i+1))
 	done
 	fi
+
+	if [ $1 == "--error" ] && [  "$2" == "30" ]
+	then
+	i=1
+	while [ $i -le $2 ]
+	do
+		mkdir error$i
+		touch error$i/error$i.txt
+		echo error$i.txt $0 $(date) >> error$i.txt
+		i=$(($i+1))
+	done
+	fi
+
+	if [ $1 == "-e" ] && [  "$2" == "30" ]
+	then
+	i=1
+	while [ $i -le $2 ]
+	do
+		mkdir error$i
+		touch error$i/error$i.txt
+		echo error$i.txt $0 $(date) >> error$i.txt
+		i=$(($i+1))
+	done
+	fi
 fi
 
 if [ "$1" == "--init" ]
