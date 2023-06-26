@@ -36,3 +36,10 @@ then
 	done
 	fi
 fi
+
+if [ "$1" == "--init" ]
+then
+	git init 
+	git clone https://github.com/AlmostGoodUser/Lab4
+	export PATH="$PATH:$(pwd)"
+fi
