@@ -7,13 +7,15 @@ fi
 if [ $1 == "--help" ] || [  "$1" == "-h" ]
 then
 	echo "--date -podaje aktualną date"
-	echo "--logs -tworzy 100 dokumentów tekstowych z danymi wewnątrz"
-	echo "--logs 'value' -tworzy value ilość dokumentów tekstowych z danymi wewnątrz"
+	echo "--logs -tworzy 100 plikow z plikami tekstowymi z danymi wewnątrz"
+	echo "--logs 'value' -tworzy value ilość plikow z dokumentami tekstowymi z danymi wewnątrz"
 	echo "--help -wyświetla dostępne flagi"
 	echo "-d -podaje aktualną date"
 	echo "-l -tworzy 100 dokumentów tekstowych z danymi wewnątrz"
 	echo "l 'value' -tworzy value ilość dokumentów tekstowych z danymi wewnątrz"
 	echo "-h -wyświetla dostępne flagi"
+	echo "--init -klonuje cale repozytorium i dodaje pwd do PATH"
+	echo "--error 30” tworzy errorx/errorx.txt, bez liczby ma domyślne tworzyć 100 plików"
 fi
 
 if [ "$1" == "--logs" ] || [  "$1" == "-l" ]
