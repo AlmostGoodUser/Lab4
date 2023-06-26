@@ -10,6 +10,10 @@ then
 	echo "--logs -tworzy 100 dokumentów tekstowych z danymi wewnątrz"
 	echo "--logs 'value' -tworzy value ilość dokumentów tekstowych z danymi wewnątrz"
 	echo "--help -wyświetla dostępne flagi"
+	echo "-d -podaje aktualną date"
+	echo "-l -tworzy 100 dokumentów tekstowych z danymi wewnątrz"
+	echo "l 'value' -tworzy value ilość dokumentów tekstowych z danymi wewnątrz"
+	echo "-h -wyświetla dostępne flagi"
 fi
 
 if [ "$1" == "--logs" ] || [  "$1" == "-l" ]
